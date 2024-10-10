@@ -11,10 +11,11 @@ package oura
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jjenkins/oura"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_oura_SandboxRoutesAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleDailyActivityDocumentsV2SandboxUsercollectionDailyActivityGet(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleDailyCardiovascularAgeDocumentsV2SandboxUsercollectionDailyCardiovascularAgeGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleDailyCardiovascularAgeDocumentsV2SandboxUsercollectionDailyCardiovascularAgeGet(context.Background()).Execute()
 
@@ -48,7 +49,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleDailyReadinessDocumentsV2SandboxUsercollectionDailyReadinessGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleDailyReadinessDocumentsV2SandboxUsercollectionDailyReadinessGet(context.Background()).Execute()
 
@@ -60,7 +61,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleDailyResilienceDocumentsV2SandboxUsercollectionDailyResilienceGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleDailyResilienceDocumentsV2SandboxUsercollectionDailyResilienceGet(context.Background()).Execute()
 
@@ -72,7 +73,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleDailySleepDocumentsV2SandboxUsercollectionDailySleepGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleDailySleepDocumentsV2SandboxUsercollectionDailySleepGet(context.Background()).Execute()
 
@@ -84,7 +85,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleDailySpo2DocumentsV2SandboxUsercollectionDailySpo2Get", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleDailySpo2DocumentsV2SandboxUsercollectionDailySpo2Get(context.Background()).Execute()
 
@@ -96,7 +97,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleDailyStressDocumentsV2SandboxUsercollectionDailyStressGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleDailyStressDocumentsV2SandboxUsercollectionDailyStressGet(context.Background()).Execute()
 
@@ -108,7 +109,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleEnhancedTagDocumentsV2SandboxUsercollectionEnhancedTagGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleEnhancedTagDocumentsV2SandboxUsercollectionEnhancedTagGet(context.Background()).Execute()
 
@@ -120,7 +121,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleHeartrateDocumentsV2SandboxUsercollectionHeartrateGet(context.Background()).Execute()
 
@@ -132,7 +133,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleRestModePeriodDocumentsV2SandboxUsercollectionRestModePeriodGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleRestModePeriodDocumentsV2SandboxUsercollectionRestModePeriodGet(context.Background()).Execute()
 
@@ -144,7 +145,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleRingConfigurationDocumentsV2SandboxUsercollectionRingConfigurationGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleRingConfigurationDocumentsV2SandboxUsercollectionRingConfigurationGet(context.Background()).Execute()
 
@@ -156,7 +157,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleSessionDocumentsV2SandboxUsercollectionSessionGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleSessionDocumentsV2SandboxUsercollectionSessionGet(context.Background()).Execute()
 
@@ -168,7 +169,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleSleepDocumentsV2SandboxUsercollectionSleepGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleSleepDocumentsV2SandboxUsercollectionSleepGet(context.Background()).Execute()
 
@@ -180,7 +181,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleSleepTimeDocumentsV2SandboxUsercollectionSleepTimeGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleSleepTimeDocumentsV2SandboxUsercollectionSleepTimeGet(context.Background()).Execute()
 
@@ -192,7 +193,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleTagDocumentsV2SandboxUsercollectionTagGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleTagDocumentsV2SandboxUsercollectionTagGet(context.Background()).Execute()
 
@@ -204,7 +205,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleVO2MaxDocumentsV2SandboxUsercollectionVO2MaxGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleVO2MaxDocumentsV2SandboxUsercollectionVO2MaxGet(context.Background()).Execute()
 
@@ -216,7 +217,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxMultipleWorkoutDocumentsV2SandboxUsercollectionWorkoutGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.SandboxRoutesAPI.SandboxMultipleWorkoutDocumentsV2SandboxUsercollectionWorkoutGet(context.Background()).Execute()
 
@@ -228,7 +229,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleDailyActivityDocumentV2SandboxUsercollectionDailyActivityDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -242,7 +243,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleDailyCardiovascularAgeDocumentV2SandboxUsercollectionDailyCardiovascularAgeDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -256,7 +257,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleDailyReadinessDocumentV2SandboxUsercollectionDailyReadinessDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -270,7 +271,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleDailyResilienceDocumentV2SandboxUsercollectionDailyResilienceDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -284,7 +285,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleDailySleepDocumentV2SandboxUsercollectionDailySleepDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -298,7 +299,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleDailySpo2DocumentV2SandboxUsercollectionDailySpo2DocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -312,7 +313,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleDailyStressDocumentV2SandboxUsercollectionDailyStressDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -326,7 +327,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleEnhancedTagDocumentV2SandboxUsercollectionEnhancedTagDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -340,7 +341,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleRestModePeriodDocumentV2SandboxUsercollectionRestModePeriodDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -354,7 +355,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleRingConfigurationDocumentV2SandboxUsercollectionRingConfigurationDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -368,7 +369,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleSessionDocumentV2SandboxUsercollectionSessionDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -382,7 +383,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleSleepDocumentV2SandboxUsercollectionSleepDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -396,7 +397,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleSleepTimeDocumentV2SandboxUsercollectionSleepTimeDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -410,7 +411,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleTagDocumentV2SandboxUsercollectionTagDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -424,7 +425,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleVO2MaxDocumentV2SandboxUsercollectionVO2MaxDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 
@@ -438,7 +439,7 @@ func Test_oura_SandboxRoutesAPIService(t *testing.T) {
 
 	t.Run("Test SandboxRoutesAPIService SandboxSingleWorkoutDocumentV2SandboxUsercollectionWorkoutDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 

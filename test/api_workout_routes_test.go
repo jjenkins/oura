@@ -11,10 +11,11 @@ package oura
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jjenkins/oura"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_oura_WorkoutRoutesAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_oura_WorkoutRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WorkoutRoutesAPIService MultipleWorkoutDocumentsV2UsercollectionWorkoutGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.WorkoutRoutesAPI.MultipleWorkoutDocumentsV2UsercollectionWorkoutGet(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_oura_WorkoutRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WorkoutRoutesAPIService SingleWorkoutDocumentV2UsercollectionWorkoutDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 

@@ -11,10 +11,11 @@ package oura
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jjenkins/oura"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_oura_DailyResilienceRoutesAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_oura_DailyResilienceRoutesAPIService(t *testing.T) {
 
 	t.Run("Test DailyResilienceRoutesAPIService MultipleDailyResilienceDocumentsV2UsercollectionDailyResilienceGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.DailyResilienceRoutesAPI.MultipleDailyResilienceDocumentsV2UsercollectionDailyResilienceGet(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_oura_DailyResilienceRoutesAPIService(t *testing.T) {
 
 	t.Run("Test DailyResilienceRoutesAPIService SingleDailyResilienceDocumentV2UsercollectionDailyResilienceDocumentIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var documentId string
 

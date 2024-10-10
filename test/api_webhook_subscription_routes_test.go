@@ -11,10 +11,11 @@ package oura
 
 import (
 	"context"
+	"testing"
+
+	openapiclient "github.com/jjenkins/oura"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
-	openapiclient "github.com/GIT_USER_ID/GIT_REPO_ID"
 )
 
 func Test_oura_WebhookSubscriptionRoutesAPIService(t *testing.T) {
@@ -24,7 +25,7 @@ func Test_oura_WebhookSubscriptionRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WebhookSubscriptionRoutesAPIService CreateWebhookSubscriptionV2WebhookSubscriptionPost", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.WebhookSubscriptionRoutesAPI.CreateWebhookSubscriptionV2WebhookSubscriptionPost(context.Background()).Execute()
 
@@ -36,7 +37,7 @@ func Test_oura_WebhookSubscriptionRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WebhookSubscriptionRoutesAPIService DeleteWebhookSubscriptionV2WebhookSubscriptionIdDelete", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -49,7 +50,7 @@ func Test_oura_WebhookSubscriptionRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WebhookSubscriptionRoutesAPIService GetWebhookSubscriptionV2WebhookSubscriptionIdGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -63,7 +64,7 @@ func Test_oura_WebhookSubscriptionRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WebhookSubscriptionRoutesAPIService ListWebhookSubscriptionsV2WebhookSubscriptionGet", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		resp, httpRes, err := apiClient.WebhookSubscriptionRoutesAPI.ListWebhookSubscriptionsV2WebhookSubscriptionGet(context.Background()).Execute()
 
@@ -75,7 +76,7 @@ func Test_oura_WebhookSubscriptionRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WebhookSubscriptionRoutesAPIService RenewWebhookSubscriptionV2WebhookSubscriptionRenewIdPut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
@@ -89,7 +90,7 @@ func Test_oura_WebhookSubscriptionRoutesAPIService(t *testing.T) {
 
 	t.Run("Test WebhookSubscriptionRoutesAPIService UpdateWebhookSubscriptionV2WebhookSubscriptionIdPut", func(t *testing.T) {
 
-		t.Skip("skip test")  // remove to run test
+		t.Skip("skip test") // remove to run test
 
 		var id string
 
