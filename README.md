@@ -91,7 +91,3 @@ This is an unofficial Oura API client and is not affiliated with or endorsed by 
 ## Contact
 
 If you have any questions or feedback, please open an issue on the GitHub repository.
-
----
-
-Remember to replace `yourusername` with your actual GitHub username or organization name throughout this README.
