@@ -49,3 +49,62 @@ type Contributors struct {
 	RestingHeartRate    int `json:"resting_heart_rate"`    // Contribution from resting heart rate (0-100)
 	SleepBalance        int `json:"sleep_balance"`         // Contribution from sleep balance (0-100)
 }
+
+// DailySpO2Model represents the daily SpO2 data returned by the API
+type DailySpO2Model struct {
+	ID             string              `json:"id"`
+	Day            string              `json:"day"`
+	SpO2Percentage DailySpO2Percentage `json:"spo2_percentage"`
+}
+
+// DailySpO2Percentage represents the SpO2 percentage value aggregated over a single day
+type DailySpO2Percentage struct {
+	Average float64 `json:"average"`
+}
+
+// DailyActivity represents the daily activity data returned by the API
+type DailyActivity struct {
+	ID                        string               `json:"id"`
+	Class5Min                 string               `json:"class_5_min"`
+	Score                     int                  `json:"score"`
+	ActiveCalories            int                  `json:"active_calories"`
+	AverageMETMinutes         float64              `json:"average_met_minutes"`
+	Contributors              ActivityContributors `json:"contributors"`
+	EquivalentWalkingDistance int                  `json:"equivalent_walking_distance"`
+	HighActivityMETMinutes    int                  `json:"high_activity_met_minutes"`
+	HighActivityTime          int                  `json:"high_activity_time"`
+	InactivityAlerts          int                  `json:"inactivity_alerts"`
+	LowActivityMETMinutes     int                  `json:"low_activity_met_minutes"`
+	LowActivityTime           int                  `json:"low_activity_time"`
+	MediumActivityMETMinutes  int                  `json:"medium_activity_met_minutes"`
+	MediumActivityTime        int                  `json:"medium_activity_time"`
+	MET                       Sample               `json:"met"`
+	MetersToTarget            int                  `json:"meters_to_target"`
+	NonWearTime               int                  `json:"non_wear_time"`
+	RestingTime               int                  `json:"resting_time"`
+	SedentaryMETMinutes       int                  `json:"sedentary_met_minutes"`
+	SedentaryTime             int                  `json:"sedentary_time"`
+	Steps                     int                  `json:"steps"`
+	TargetCalories            int                  `json:"target_calories"`
+	TargetMeters              int                  `json:"target_meters"`
+	TotalCalories             int                  `json:"total_calories"`
+	Day                       string               `json:"day"`
+	Timestamp                 time.Time            `json:"timestamp"`
+}
+
+// ActivityContributors represents the contributors to the activity score
+type ActivityContributors struct {
+	MeetDailyTargets  int `json:"meet_daily_targets"`
+	MoveEveryHour     int `json:"move_every_hour"`
+	RecoveryTime      int `json:"recovery_time"`
+	StayActive        int `json:"stay_active"`
+	TrainingFrequency int `json:"training_frequency"`
+	TrainingVolume    int `json:"training_volume"`
+}
+
+// Sample represents a sample of data over time
+type Sample struct {
+	Interval  float64   `json:"interval"`
+	Items     []float64 `json:"items"`
+	Timestamp time.Time `json:"timestamp"`
+}
