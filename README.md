@@ -7,7 +7,7 @@ This package provides a Go client for interacting with the Oura API (v2). It all
 To use this package in your Go project, you can install it using `go get`:
 
 ```bash
-go get github.com/yourusername/ouraring
+go get github.com/jjenkins/ouraring
 ```
 
 Replace `yourusername` with your actual GitHub username or organization name.
@@ -24,7 +24,7 @@ import (
     "log"
     "time"
 
-    "github.com/yourusername/ouraring"
+    "github.com/jjenkins/ouraring"
 )
 
 func main() {
